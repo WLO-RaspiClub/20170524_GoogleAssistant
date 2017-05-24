@@ -36,6 +36,7 @@
     - Oauth同意画面で入力
     - Oauth2.0クライアントキー作成
     - JSONをダウンロード
+        - ``` /home/pi/client_secret_client-id.json ``` に保存しておく
 - Google Accountのアクティビティコントロールを有効に
     - https://myaccount.google.com/activitycontrols?pli=1
     - 「端末情報」と「音声アクティビティ」をONにする
@@ -64,6 +65,18 @@ $ source env/bin/activate
 ```
 (env) $ python -m pip install google-assistant-sdk[samples]
 ```
+
+- Oauth認証ツールをインストールする
+``` 
+(env) $ python -m pip install --upgrade google-auth-oauthlib[tool]
+```
+
+- 認証情報を設定する
+```
+(env) $ google-oauthlib-tool --client-secrets /home/pi/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+
+```
+
 
 - (参考) Python3のvenv環境からでる
 ```
