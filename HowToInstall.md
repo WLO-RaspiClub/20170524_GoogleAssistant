@@ -55,14 +55,77 @@ $ env/bin/pip install setuptools --upgrade
 $ source env/bin/activate 
 ```
 
-- Python3のvenv環境からでる
+- Google Assistant SDKをインストール(Raspberry Pi 3専用)
 ```
-(env)$ deactivate 
+(env) $ python -m pip install --upgrade https://github.com/googlesamples/assistant-sdk-python/releases/download/0.3.0/google_assistant_library-0.0.2-py2.py3-none-linux_armv7l.whl
 ```
 
+-  Google Assistant SDKをインストール(Raspberry Pi 3以外でもできるが時間かかる)
+```
+(env) $ python -m pip install google-assistant-sdk[samples]
+```
 
+- (参考) Python3のvenv環境からでる
+```
+(env) $ deactivate 
+```
 
 ## Raspberry Piの音声環境設定
+- デバイスの接続状況を確認する
+- 再生デバイス
+```
+ $ aplay -l
+**** List of PLAYBACK Hardware Devices ****
+card 0: Set [USB Headphone Set], device 0: USB Audio [USB Audio]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+card 1: ALSA [bcm2835 ALSA], device 0: bcm2835 ALSA [bcm2835 ALSA]
+  Subdevices: 8/8
+  Subdevice #0: subdevice #0
+  Subdevice #1: subdevice #1
+  Subdevice #2: subdevice #2
+  Subdevice #3: subdevice #3
+  Subdevice #4: subdevice #4
+  Subdevice #5: subdevice #5
+  Subdevice #6: subdevice #6
+  Subdevice #7: subdevice #7
+card 1: ALSA [bcm2835 ALSA], device 1: bcm2835 ALSA [bcm2835 IEC958/HDMI]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+```
+
+- 録音デバイス
+```
+$ arecord -l
+**** List of CAPTURE Hardware Devices ****
+card 0: Set [USB Headphone Set], device 0: USB Audio [USB Audio]
+  Subdevices: 1/1
+  Subdevice #0: subdevice #0
+```
+
+
+- ~/.asoundrc にデバイスを指定する
+    - ```pcm "hw:0,0" ```　←card:subdeviceの順で番号を指定する
+
+```
+pcm.!default {
+  type asym
+  capture.pcm "mic"
+  playback.pcm "speaker"
+}
+pcm.mic {
+  type plug
+  slave {
+    pcm "hw:0,0"
+  }
+}
+pcm.speaker {
+  type plug
+  slave {
+    pcm "hw:0,0"
+  }
+}
+```
 
 
 ## google-assistant-demoで「OK Google」
