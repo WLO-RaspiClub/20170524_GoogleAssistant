@@ -21,13 +21,13 @@
     
 ## Google Cloud Platformの設定
 - https://cloud.google.com/?hl=ja
-    - ![GCP画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCP-0.png)
+    - GCPトップ画面 <br> ![GCP画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCP-0.png)
 - Google Accountでログインする
-    - ![GCPログイン画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPlogin1.png)
-    - ![GCPログイン画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPlogin2.png)
-    - ![GCP登録画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPjoin1.png)
-    - お客様情報の入力（住所とかカード番号とか）
-    - ![GCP Welcome画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPconsole1.png)
+    - GCPログイン画面 <br> ![GCPログイン画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPlogin1.png)
+    - GCPパスワード画面 <br> ![GCPログイン画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPlogin2.png)
+    - GCP登録画面 <br> ![GCP登録画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPjoin1.png)
+    - お客様情報の入力（住所とかカード番号とか） 画像なし <br> 
+    - GCP Welcome画面 <br> ![GCP Welcome画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPconsole1.png)
 - プロジェクトを作成
     - プロジェクト名入力
     - API Managerダッシュボード
@@ -127,6 +127,9 @@ pcm.speaker {
 }
 ```
 
+- 確認
+    - ``` $ arecord --format=S16_LE --duration=5 --rate=16k --file-type=raw out.raw ``` で5秒録音
+    - ``` $ aplay --format=S16_LE --rate=16k out.raw ``` で再生
 
 ## google-assistant-demoで「OK Google」
 
