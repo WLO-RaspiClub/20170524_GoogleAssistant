@@ -18,8 +18,10 @@
     - https://developers.google.com/assistant/sdk/prototype/getting-started-pi-python/
 - 「Google Assistant Raspberry Pi」とかで検索するとでてくるが、大抵はgoogle-assistant-sdkのバージョンが古く手順が異なる。
     - google-assistant-sdk が0.3.0以降に対応している手順かどうか確認
-    
-## Google Cloud Platformの設定
+
+## インストールの手順
+
+### Google Cloud Platformの設定
 - https://cloud.google.com/?hl=ja
     - GCPトップ画面 <br> ![GCP画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/GCP-0.png)
 - Google Accountでログインする
@@ -45,7 +47,7 @@
     - https://myaccount.google.com/activitycontrols?pli=1
     - 「端末情報」と「音声アクティビティ」をONにする <br> ![アクティビティ](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/myactiv.png)
 
-## Raspberry PiにGoogle Assistant SDKをインストールする
+### Raspberry PiにGoogle Assistant SDKをインストールする
 - Python3のvenv環境を作成
 
 ```
@@ -94,7 +96,7 @@ $ source env/bin/activate
 (env) $ deactivate 
 ```
 
-## Raspberry Piの音声環境設定
+### Raspberry Piの音声環境設定
 - デバイスの接続状況を確認する
 - 再生デバイス
 ```
@@ -165,7 +167,7 @@ INFO:root:Finished playback. (ここで聞こえたら合格)
 INFO:root:audio test completed.
 ```
 
-## google-assistant-demoで「OK Google」
+### google-assistant-demoで「OK Google」
 - ツールでテスト
 ```
 (env) $ google-assistant-demo
