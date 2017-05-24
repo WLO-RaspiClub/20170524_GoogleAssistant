@@ -19,4 +19,37 @@
 - 「Google Assistant Raspberry Pi」とかで検索するとでてくるが、大抵はgoogle-assistant-sdkのバージョンが古く手順が異なる。
     - google-assistant-sdk が0.3.0以降に対応している手順かどうか確認
     
+## Google Cloud Platformの設定
+- https://cloud.google.com/?hl=ja
+    - ![GCP画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCP-0.png)
+- Google Accountでログインする
+    - ![GCPログイン画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPlogin1.png)
+    - ![GCPログイン画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPlogin2.png)
+    - ![GCP登録画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPjoin1.png)
+    - お客様情報の入力（住所とかカード番号とか）
+    - ![GCP Welcome画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/GCPconsole1.png)
+- プロジェクトを作成
+    - プロジェクト名入力
+    - API Managerダッシュボード
+    - Google Assistant APIを有効に
+- 認証情報を作成
+    - Oauth同意画面で入力
+    - Oauth2.0クライアントキー作成
+    - JSONをダウンロード
+- Google Accountのアクティビティコントロールを有効に
+    - https://myaccount.google.com/activitycontrols?pli=1
+    - 「端末情報」と「音声アクティビティ」をONにする
+
+## Raspberry PiにGoogle Assistant SDKをインストールする
+- Python3のvenv環境を作成
+- 
+
+## Raspberry Piの音声環境設定
+
+
+## google-assistant-demoで「OK Google」
+
+## IFTTT連携設定
+
+
     
