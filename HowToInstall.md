@@ -43,7 +43,7 @@
         - ``` /home/pi/client_secret_client-id.json ``` に保存しておく
 - Google Accountのアクティビティコントロールを有効に
     - https://myaccount.google.com/activitycontrols?pli=1
-    - 「端末情報」と「音声アクティビティ」をONにする <br> ![アクティビティ](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/activi.png)
+    - 「端末情報」と「音声アクティビティ」をONにする <br> ![アクティビティ](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/myactiv.png)
 
 ## Raspberry PiにGoogle Assistant SDKをインストールする
 - Python3のvenv環境を作成
