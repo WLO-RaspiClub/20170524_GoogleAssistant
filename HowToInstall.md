@@ -34,7 +34,7 @@
     - プロジェクト名入力 <br> ![プロジェクト名入力](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project3.png)
     - プロジェクト作成確認 <br> ![プロジェクト作成確認](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project4.png)
     - API ManagerダッシュボードでAPIを有効にするを押下 <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project5.png)
-    - Google Assistant APIを検索して有効にする <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project6.png)
+    - Google Assistant APIを検索して有効にする <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project6.png) <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project7.png)
 - 認証情報を作成
     - Oauth同意画面で入力
     - Oauth2.0クライアントキー作成
