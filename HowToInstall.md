@@ -29,9 +29,12 @@
     - お客様情報の入力（住所とかカード番号とか） 画像なし <br> 
     - GCP Welcome画面 <br> ![GCP Welcome画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/GCPconsole1.png)
 - プロジェクトを作成
-    - プロジェクト名入力
-    - API Managerダッシュボード
-    - Google Assistant APIを有効に
+    - メニュー上部のプロジェクト選択メニュー <br> ![プロジェクト１](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project1.png)
+    - 新規プロジェクト(+ボタン) <br> ![新規プロジェクト](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project2.png)
+    - プロジェクト名入力 <br> ![プロジェクト名入力](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project3.png)
+    - プロジェクト作成確認 <br> ![プロジェクト作成確認](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project4.png)
+    - API ManagerダッシュボードでAPIを有効にするを押下 <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project5.png)
+    - Google Assistant APIを検索して有効にする <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project6.png)
 - 認証情報を作成
     - Oauth同意画面で入力
     - Oauth2.0クライアントキー作成
