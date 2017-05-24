@@ -36,13 +36,14 @@
     - API ManagerダッシュボードでAPIを有効にするを押下 <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project5.png)
     - Google Assistant APIを検索して有効にする <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project6.png) <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/project7.png)
 - 認証情報を作成
-    - Oauth同意画面で入力
-    - Oauth2.0クライアントキー作成
-    - JSONをダウンロード
+    - API Managerダッシュボードで認証情報 <br> ![ダッシュボード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/auth1.png)
+    - Oauth同意画面でメールアドレスとサービス名を入力 <br> ![Oauth同意画面](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/auth2.png)
+    - Oauth2.0クライアントキー作成 <br> ![Oauthクライアントキー作成](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/auth3.png)
+    - JSONをダウンロード <br> ![クレデンシャルダウンロード](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/auth4.png)
         - ``` /home/pi/client_secret_client-id.json ``` に保存しておく
 - Google Accountのアクティビティコントロールを有効に
     - https://myaccount.google.com/activitycontrols?pli=1
-    - 「端末情報」と「音声アクティビティ」をONにする
+    - 「端末情報」と「音声アクティビティ」をONにする <br> ![アクティビティ](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/img/activi.png)
 
 ## Raspberry PiにGoogle Assistant SDKをインストールする
 - Python3のvenv環境を作成
