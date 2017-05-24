@@ -130,8 +130,36 @@ pcm.speaker {
 - 確認
     - ``` $ arecord --format=S16_LE --duration=5 --rate=16k --file-type=raw out.raw ``` で5秒録音
     - ``` $ aplay --format=S16_LE --rate=16k out.raw ``` で再生
+    - Googleのツールで確認
+```
+(env) $ googlesamples-assistant-audiotest
+INFO:root:Starting audio test.
+INFO:root:Recording samples. (ここでマイクにむかって話す)
+INFO:root:Finished recording.
+INFO:root:Playing back samples.
+INFO:root:Finished playback. (ここで聞こえたら合格)
+INFO:root:audio test completed.
+```
 
 ## google-assistant-demoで「OK Google」
+- ツールでテスト
+```
+(env) $ google-assistant-demo
+ON_MUTED_CHANGED:
+  {'is_muted': False}
+ON_START_FINISHED  (ここで「OK Google」と言う
+
+ON_CONVERSATION_TURN_STARTED (OK Googleが反応すると表示。このあと「What time is it now」と言う)
+ON_END_OF_UTTERANCE
+ON_RECOGNIZING_SPEECH_FINISHED:
+  {'text': 'what time is it now'}　(聞き取った文字を表示) 
+ON_RESPONDING_STARTED:
+  {'is_error_response': False}   (ここでThe time is xxxと聞こえる)
+ON_RESPONDING_FINISHED
+ON_CONVERSATION_TURN_FINISHED:
+  {'with_follow_on_turn': False}
+
+```
 
 ## IFTTT連携設定
 
