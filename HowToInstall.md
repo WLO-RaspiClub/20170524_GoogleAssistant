@@ -75,14 +75,14 @@ $ source env/bin/activate
 ```
 (env) $ google-oauthlib-tool --client-secrets /home/pi/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
 ```
-![コンソール](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/oauth_taken.png)
+![コンソール](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/oauth_taken.png) <br>
 (長いURLが表示されるので、ブラウザでアクセスする）
 
 - ログイン画面表示されるのでログインする <br> ![OAuthログイン](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/Oauth1.png)
 
 - トークンが表示される <br> ![認証確認](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/Oauth2.png)
 
-![コンソール](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/oauth_taken2.png)
+![コンソール](https://github.com/WLO-RaspiClub/20170524_GoogleAssistant/raw/master/oauth_taken2.png) <br>
 (Enter the authorization code にトークンを入力すると、 /home/pi/.config/google-oauthlib-tools/credentials.json に保存される)
 
 - (参考) Python3のvenv環境からでる
