@@ -64,12 +64,12 @@ $ env/bin/python -m pip install --upgrade pip setuptools
 $ source env/bin/activate 
 ```
 
-- Google Assistant SDKをインストール(Raspberry Pi 3専用)
+- Google Assistant SDKをバイナリインストール(Raspberry Pi 3専用、google-assistant-demoのみ導入)
 ```
 (env) $ python -m pip install --upgrade https://github.com/googlesamples/assistant-sdk-python/releases/download/0.3.0/google_assistant_library-0.0.2-py2.py3-none-linux_armv7l.whl
 ```
 
--  Google Assistant SDKをインストール(Raspberry Pi 3以外でもできるが時間かかる)
+-  Google Assistant SDKをインストール(Raspberry Pi 3以外でもできるが時間かかる、googlesamples-assistant-audiotest等も導入できる)
 ```
 (env) $ python -m pip install google-assistant-sdk[samples]
 ```
@@ -158,7 +158,7 @@ pcm.speaker {
 - 確認
     - ``` $ arecord --format=S16_LE --duration=5 --rate=16k --file-type=raw out.raw ``` で5秒録音
     - ``` $ aplay --format=S16_LE --rate=16k out.raw ``` で再生
-    - Googleのツールで確認
+    - Googleのツールで確認（バイナリインストール時はできません）
 ```
 (env) $ googlesamples-assistant-audiotest
 INFO:root:Starting audio test.
@@ -170,7 +170,7 @@ INFO:root:audio test completed.
 ```
 
 ### google-assistant-demoで「OK Google」
-- ツールでテスト
+- ツールでテスト（バイナリインストール時）
 ```
 (env) $ google-assistant-demo
 ON_MUTED_CHANGED:
@@ -188,6 +188,11 @@ ON_CONVERSATION_TURN_FINISHED:
   {'with_follow_on_turn': False}
 
 ```
+
+- ツール紹介 ``` env/bin ``` にインストールされます
+    -（バイナリインストール時にはgooglesamples-*はインストールされません）
+    - googlesamples-assistant-hotword
+    - googlesamples-assistant-pushtotalk
 
 ## IFTTT連携設定
 
