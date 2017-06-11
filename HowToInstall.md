@@ -132,7 +132,7 @@ card 0: Set [USB Headphone Set], device 0: USB Audio [USB Audio]
 ```
 
 
-- ~/.asoundrc にデバイスを指定する
+- ~/.asoundrc をvi等で編集して、デバイスを指定する
     - ```pcm "hw:0,0" ```　←card:subdeviceの順で番号を指定する
 
 ```
